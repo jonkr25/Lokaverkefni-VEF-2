@@ -78,7 +78,7 @@
   <form action="#" method="post" id="skraning">
     
 
-     Nafn:
+    Nafn:
     <label><input type="text" name="nafn" placeholder="Sláðu inn nafn"required></label><br>
     Netfang: 
     <label><input type="email" name="email" placeholder="Sláðu inn netfang"required></label><br>
@@ -86,7 +86,7 @@
     Hugmyndir:
     <textarea placeholder="Skrifaðu Hugmyndir fyrir forritið"></textarea>
 
-    <button type="button" id="showDialogButton" class="animated-button">
+    <button type="submit" id="showDialogButton" class="animated-button">
     Skrá mig
     </button>
     <button type="button" id="closeSignup">
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (signupDialog) {
         signupDialog.showModal();
     }
-
+    
     if (closeBtn) {
         closeBtn.addEventListener("click", () => {
             signupDialog.close();
