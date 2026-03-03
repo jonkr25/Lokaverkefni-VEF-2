@@ -1,1 +1,175 @@
-asdfasdfsadf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pico.sand.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+    .spin {
+        width: 75px;
+        height: auto;
+        display: block;
+        animation: spin 4s linear infinite;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skokkhópur Laugardals</h1>  <img src="myndir/teikning-2.svg" alt="logo" class="spin">
+        <nav>
+        <a href="#um">Um okkur</a> 
+        <a href="#dagskra">Dagskrá</a> 
+        <a href="#keppni">Keppni mánaðarins</a> 
+        <a href="#samband">Hafðu samband</a>
+        </nav>
+    </header>
+    <hr>
+   
+<section>
+    <img src="myndir\gabin-vallet-J154nEkpzlQ-unsplash.jpg" id="mynd">
+</section>
+<section id="um">
+    <h2>Um hópinn</h2>
+     <p>Við erum skokkhópur í Laugardal.</p>
+    <p>Við hittumst þrisvar í viku.</p>
+    <p>Allir eru velkomnir, óháð getustigi.</p>
+    <p>Markmið: bæta heilsu, úthald og skapa gott samfélag.</p>
+</section>
+<hr>
+<section id="dagskra">
+    <h2>Dagskrá æfinga</h2>
+    <table>
+        <tr>
+            <th>Dagur</th>
+            <th>Tími</th>
+            <th>Tegund æfingar</th>
+            <th>Staðsetning</th>
+        </tr>
+        <tr>
+            <td>Þriðjudagur</td>
+            <td>18:00</td>
+            <td>Hópskokk</td>
+            <td>Húsdýragarðurinn</td>
+        </tr>
+        <tr>
+             <td>Fimmtudagur</td>
+            <td>18:00</td>
+            <td>Hópskokk</td>
+            <td>Grasagarður Laugardals</td>
+        </tr>
+        <tr>
+            <td>Laugardagur</td>
+            <td>10:00</td>
+            <td>Langhlaup</td>
+            <td>Fyrir framan Laugardalslaug</td>
+        </tr>
+    </table>
+</section>
+<dialog id="signupDialog">
+  <h1>Skráningarform</h1>
+
+  <form action="#" method="post" id="skraning">
+    
+
+     Nafn:
+    <label><input type="text" name="nafn" placeholder="Sláðu inn nafn"required></label><br>
+    Netfang: 
+    <label><input type="email" name="email" placeholder="Sláðu inn netfang"required></label><br>
+    </select></label>
+    Hugmyndir:
+    <textarea placeholder="Skrifaðu Hugmyndir fyrir forritið"></textarea>
+
+    <button type="button" id="showDialogButton" class="animated-button">
+    Skrá mig
+    </button>
+    <button type="button" id="closeSignup">
+    Loka
+    </button>
+</form>
+</dialog>
+<hr>
+<section id="keppni">
+    <h2>Keppni mánaðarins</h2>
+    <p>Taktu þátt í mánaðarlegri keppni, verðlaun í boði!</p>
+    <p>Sérstakur söluhvati fyrir þátttakendur.</p>
+    <h4>Sláðu inn hvað mikið þú skokkaðir í vikunni.</h4>
+    <form>
+    <textarea placeholder="Km skokkað í vikuni"></textarea> 
+    <input type="submit" value="Skrá KM" class="animated-button" id="button-2">
+    </form>
+    <table>
+        <tr>
+            <th>Nafn</th>
+            <th>Km</th>
+            <th>Staða á töflunni</th>
+        </tr>
+        <tr>
+            <td>Jón</td>
+            <td>100</td>
+            <td>#1</td>
+        </tr>
+        <tr>
+             <td>Kristján</td>
+            <td>80</td>
+            <td>#2</td>
+        </tr>
+        <tr>
+            <td>Arnar</td>
+            <td>75</td>
+            <td>#3</td>
+        </tr>
+    </table>
+    
+</section>
+
+
+<section id="samband">
+    <h2>Hafðu samband</h2>
+    <p>Netfang: info@skokkhopur.is</p>
+    <p>Sími: 555-1234</p>
+</section>
+
+<hr>
+
+<footer>
+    <p>© 2026 Skokkhópur Laugardals</p>
+        <a href="https://www.youtube.com/">
+            <img src="myndir/youtube.svg"width=50px height="50px">
+        </a>
+        <a href="https://www.facebook.com/">
+            <img src="myndir/facebook.svg" width="50px" height="50px">
+        </a>
+        
+</footer>
+<dialog id="Mydialog">
+    <h3>Takk fyrir skráninguna!</h3>
+    <button id="closeDialogButton">Loka</button>
+</dialog>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const signupDialog = document.getElementById("signupDialog");
+    const closeBtn = document.getElementById("closeSignup");
+
+    if (signupDialog) {
+        signupDialog.showModal();
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            signupDialog.close();
+        });
+    }
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    box-sizing:border-box;
+}
+body{
+  font-family:"Roboto Condensed",sans-serif;
+  background-color: lightslategray;
+  color:#333;
+  margin: 0;
+  padding: 20px;
+}
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-condensed-uniquifier {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+}
+dialog {
+    width: 95%;
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+dialog input,
+dialog textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+dialog button {
+    width: 100%;
+    padding: 12px;
+}
+@media (max-width: 768px) {
+  body {
+        padding: 15px;
+    }
+  dialog {
+    width: 95%;
+    max-width: 95%;
+    margin: 0;
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+  dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  dialog input,
+  dialog textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  dialog button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+}
+.animated-button:hover {
+    transform: scale(1.1);
+}
+.animated-button {
+    transition: transform 0.3s ease;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #2c7da0;
+    color: white;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        color:black;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        color:black;
+    }
+}
+@media (max-width: 1024px) {
+   nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        color:black;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #e6f2f8;
+        border-radius: 6px;
+        color:black;
+    }
+   }
+#button-2 {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+p, td, th, a {
+    font-weight: 400;
+}
